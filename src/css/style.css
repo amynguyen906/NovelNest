@@ -1,0 +1,583 @@
+/** ----------- Sign in and Sign up ------------- **/
+/*Style for heading*/
+nav.heading {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color:rgb(211, 166, 130);
+
+}
+
+nav.heading img {
+    width: 40px;
+    height: auto;
+    margin-right:10px;
+}
+
+nav.heading h2 {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 24px;
+    color:rgb(63, 34, 14);
+    margin: 0;
+}
+
+/*Background styles*/
+.background {
+    background-color:rgb(237, 202, 179); 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.centered-container {
+    width: 80%; 
+    max-width: 1200px; 
+    padding: 20px;
+}
+
+.top-section {
+    background-color:rgb(174, 116, 68);
+    margin: 0;
+    padding:0;
+    width: 100%;
+}
+.bottom-section{
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+footer {
+    text-align: center;
+    margin-top: 20px; 
+}
+  
+footer h3 {
+    margin: 0;
+}
+/*container*/
+.container {
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+}
+/*left half designs*/
+.left-half {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(211, 166, 130);
+    border-radius: 20px 0 0 20px;
+
+}
+.left-half .description {
+    margin: 20px 0;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left-half .description h2 {
+    margin-bottom: 10px; 
+}
+.left-half .description p {
+    margin-bottom: 20px; 
+}
+
+.left-half .rounded-button {
+    width: auto; 
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-color:rgb(174, 116, 68);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.left-half .rounded-button a {
+    text-decoration: none; 
+    color:rgb(63, 34, 14); 
+}
+
+.left-half .rounded-button:hover {
+    transform: scale(1.06);
+}
+
+/*right haf designs*/
+.right-half {
+    flex: 1;
+    background-color:rgb(174, 116, 68);
+    border-radius: 0 20px 20px 0;
+    padding: 20px;
+}
+/*style for description and signup form*/
+.description h2, .description p, .signup-form {
+    margin: 0;
+}
+.description a {
+    color:rgb(63, 34, 14);
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+/*sign in button*/
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.rounded-input {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color:rgb(237, 202, 179);
+    font-size: 16px;
+    color: #333;
+}
+.rounded-button {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 25px;
+    box-sizing: border-box;
+    background-color:rgb(211, 166, 130);
+    color:rgb(63, 34, 14);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; 
+    font-weight: bold;
+}
+
+.rounded-input:hover,
+.rounded-button:hover {
+  transform: scale(1.06);
+}
+
+.signup-form h2,
+.signin-form h2 {
+  text-align: center;
+}
+
+/** ----------- Who are we? ------------- **/
+/** styles below are specifc to who are we**/
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.intro {
+    text-align: center;
+}
+.bubbles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    width: 100%;
+}
+.bubble {
+    background-color: rgb(211, 166, 130);
+    color:rgb(63, 34, 14);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 70%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.bubble h2,
+.bubble .description {
+    margin: 10px 0;
+}
+body {
+    background-color: rgb(237, 202, 179);
+    margin: 0;
+    padding:0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   /* justify-content: space-between;*/
+    align-items: center;
+   /* min-height: 100vh;*/
+    font-family: 'Comic Sans MS', cursive;
+    color:rgb(63, 34, 14);
+   
+}
+/** ----------- Add Book ------------- **/
+/** styles below are specifc to add book**/
+
+/* top section including nav bar*/
+.add-book-top {
+  width: 100%;
+  background-color: rgb(174, 116, 68);
+  padding: 0;
+  margin: 0; 
+  display: flex;
+  align-items: center;
+
+}
+/* heading */
+.add-book-top .heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1; 
+}
+.add-book-top .heading img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+} 
+.add-book-top .heading h2 {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 24px;
+    color: rgb(63, 34, 14);
+    margin: 0;
+}
+/*contains the three buttons in the nav bar*/
+.add-book-top .button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px; 
+    gap:10px;
+}
+.add-book-top .button-container a{
+  text-decoration: none;
+  color: rgb(63, 34, 14);
+  padding: 8px 16px; 
+  border-radius: 20px;
+  background-color:rgb(174, 116, 68);
+  transition: background-color 0.3s ease;
+  font-size: 12px;
+}
+.add-book-top .button-container a:hover {
+    transform: scale(1.1);
+}
+/* Nav bar design*/
+.add-book-top .navbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.add-book-top .navbar a {
+    text-decoration: none;
+    color: rgb(63, 34, 14);
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: rgb(174, 116, 68);
+    transition: transform 0.3s ease;
+    font-size: 12px;
+}
+  
+.add-book-top .navbar a:hover {
+    transform: scale(1.1);
+}
+/* container that contains the form*/
+.add-book-container {
+    display: flex;
+    /*justify-content: center; */
+    align-items: center;
+    min-height: 80vh;
+}  
+/*form stying*/
+.add-book-form {
+    width: 100%;
+    max-width: 1000px;
+    background-color:rgb(211, 166, 130);
+    padding: 30px;
+    border-radius: 10px;
+}
+.form-box {
+    margin-bottom: 15px;
+}
+
+.add-book-form #title,
+.add-book-form #image,
+.add-book-form #price {
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+  background-color:rgb(239, 226, 216); 
+  
+}
+
+.add-book-form #description {
+  width: 100%; 
+  height: 175px; 
+  padding: 10px; 
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-align: center;
+  background-color:rgb(239, 226, 216); 
+ 
+}
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap:10px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(174, 116, 68);
+  color: rgb(63, 34, 14);
+}
+button:hover {
+  background-color: rgb(211, 166, 130);
+}
+input[type="text"],
+input[type="number"],
+textarea,
+button {
+  font-family: 'Comic Sans MS', cursive; 
+}
+.centered-heading {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    color: rgb(63, 34, 14);
+    margin-bottom: 20px;
+  }
+  
+/** ----------- Book (individual component) ------------- **/
+
+
+.book-container {
+    border: 2px solid rgb(63, 34, 14); 
+    background-color:rgb(211, 166, 130); 
+    border-radius: 10px; 
+    padding: 20px; 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    width: 90vw; 
+    padding-top: 30px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.book-image {
+    width: 80px;
+    height: auto; 
+    display: block;
+    margin: auto; 
+}
+.image-box {
+    background-color:rgb(237, 202, 179);
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.book-details {
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    margin-left: 10px;
+}
+.title-box,
+.price-box,
+.description-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin: 1px;
+    background-color:rgb(237, 202, 179);
+    font-size: 16px;
+    word-break: break-word;
+}
+
+.title-box {
+    width: 25%;
+    min-height: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.price-box {
+    width: 25%;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.description-box {
+    width: 90%;
+    min-height: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.book-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/** ----------- sign in/ sign up button styling ------------- **/
+
+/**sign up**/
+.signup-form .rounded-button {
+    border: none;
+    border-radius: 25px;
+    background-color:rgb(211, 166, 130);
+    color: rgb(63, 34, 14);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-size: 18px;
+
+    margin-bottom: 15px;
+    width: calc(100% - 20px);
+    padding: 15px;
+    box-sizing: border-box;
+    font-weight: bolder;
+  }
+  
+  .signup-form .rounded-button:hover {
+    transform: scale(1.06);
+  }
+/**sign in**/
+.signin-form .rounded-button {
+    border: none;
+    border-radius: 25px;
+    background-color:rgb(211, 166, 130);
+    color: rgb(63, 34, 14);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-size: 18px;
+
+    margin-bottom: 15px;
+    width: calc(100% - 20px);
+    padding: 15px;
+    box-sizing: border-box;
+    font-weight: bolder;
+  }
+  
+.signin-form .rounded-button:hover {
+    transform: scale(1.06);
+  }
+
+  /**link**/
+  footer a {
+     text-decoration: none;
+  }
+  /**update and delete button**/
+  .action-buttons {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      align-items: center;
+  }
+
+  .shared-button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease, color 0.3s ease;
+      font-size: 14px;
+      background-color:rgb(174, 116, 68) ;
+      color: rgb(63, 34, 14);
+      text-decoration: none;
+      margin-right:10px;
+  }
+  .shared-button:hover {
+      transform: scale(1.1);
+  }
+  .book-container button:hover {
+      background-color:brown;
+  }
+
+/**Who are We Bios**/
+.team-footer {
+    background-color:rgb(211, 166, 130);
+    padding: 20px 0px;
+
+    width: 100%;
+}
+.team-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    background-color: rgb(211, 166, 130);
+}
+
+.team-member {
+    text-align: center;
+    margin: 0 10px;  
+    width: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.image {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.member-details {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.member-details h3 {
+    margin: 5px 0;
+}
+.description-box {
+    width: 90%;
+    margin-top: 10px;
+    text-align: center;
+}
+.image {
+    max-width: 200px;
+    max-height: 200px;
+    border: 2px solid rgb(63, 34, 14);
+    border-radius: 5px;
+}
